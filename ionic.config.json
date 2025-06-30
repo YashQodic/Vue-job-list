@@ -1,0 +1,7 @@
+{
+  "name": "JobList",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
