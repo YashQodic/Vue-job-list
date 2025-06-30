@@ -24,8 +24,3 @@ Vue will run on http://localhost:3000
 npm run dev
 ```
 
-### Build for Production
-
-```bash
-npm run build
-```
