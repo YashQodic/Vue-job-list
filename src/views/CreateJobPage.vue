@@ -120,7 +120,7 @@ async function handleSubmit() {
         },
     };
     try {
-        const response = await axios.post('/api/jobs', newJob);
+        await axios.post('/api/jobs', newJob);
         toast.success("Job Was Added!", {
             autoClose: 10000,
         });

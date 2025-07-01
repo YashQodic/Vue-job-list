@@ -2,8 +2,8 @@
   <Loader v-if="jobStore.apiStatus" />
   <div v-if="!jobStore.apiStatus">
     <div class="home-container">
-      <div class="home-card-container">
-        <Card v-if="searchResult.length >= 0" v-for="(item, index) in (searchResult.reverse().slice(0, 4))" :key="index"
+      <div v-if="searchResult.length >= 0" class="home-card-container">
+        <Card v-for="(item, index) in (searchResult.reverse().slice(0, 4))" :key="index"
           :item="item" :index="index" />
         <NoJobs v-if="searchResult.length == 0" />
       </div>
@@ -22,9 +22,9 @@ import { useJobs } from '@/store/jobList.js';
 import NoJobs from '@/components/NoJobs.vue';
 import Loader from '@/components/Loader.vue';
 
-let searchInput = ref('');
-let jobStore = useJobs();
-let jobList = jobStore.getJobList();
+const searchInput = ref('');
+const jobStore = useJobs();
+const jobList = jobStore.getJobList();
 
 const searchResult = computed(() => {
   return jobList?.value?.filter((item) => {

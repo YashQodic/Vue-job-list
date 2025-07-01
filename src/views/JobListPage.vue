@@ -1,8 +1,10 @@
 <template>
     <IonSearchbar v-model="searchInput" placeholder="Search by title"></IonSearchbar>
     <div class="home-card-container">
-        <Card v-if="searchResult.length >= 0" v-for="(item, index) in searchResult" :key="index" :item="item"
-            :index="index" />
+        <div v-if="searchResult.length >= 0" >
+          <Card v-for="(item, index) in searchResult" :key="index" :item="item"
+              :index="index" />
+        </div>
         <NoJobs v-if="searchResult.length == 0" />
     </div>
 </template>
@@ -16,9 +18,9 @@ import NoJobs from '@/components/NoJobs.vue';
 
 
 
-let jobStore = useJobs();
-let searchInput = ref('');
-let jobList = jobStore.getJobList();
+const jobStore = useJobs();
+const searchInput = ref('');
+const jobList = jobStore.getJobList();
 
 
 const searchResult = computed(()=>{
