@@ -41,7 +41,9 @@ const props = defineProps({
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgb(0 0 0 / 56%);
 }
-
+.cookieCard:hover {
+  box-shadow: inset 0px 1px 20px 1px rgb(26 255 219);
+}
 .cookieCard::before {
   width: 150px;
   height: 150px;

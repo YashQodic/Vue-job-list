@@ -89,8 +89,10 @@ import { reactive, } from 'vue'
 import { useRouter } from 'vue-router';
 import axios from 'axios'
 import { toast } from 'vue3-toastify';
+import { useJobs } from '@/store/jobList.js';
 
 const router = useRouter()
+const jobStore = useJobs();
 const form = reactive({
     type: 'Full-Time',
     title: '',
@@ -121,12 +123,12 @@ async function handleSubmit() {
     };
     try {
         await axios.post('/api/jobs', newJob);
-        toast.success("Job Was Added!", {
-            autoClose: 10000,
+        jobStore.getAllJobList().then(() => {
+            toast.success("Job Was Added!");
+            setTimeout(() => {
+                router.push(`/job-list`);
+            }, 500);
         });
-        setTimeout(() => {
-            router.push(`/job-list`);
-        }, 2000);
     } catch (error) {
         console.error('Error fetching job', error);
         toast.error('Job Was Not Added');
