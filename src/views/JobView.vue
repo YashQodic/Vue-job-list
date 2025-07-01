@@ -26,7 +26,7 @@
     </div>
 
     <div class="action-buttons">
-      <button class="edit-btn">Edit</button>
+      <button class="edit-btn" @click="editJob">Edit</button>
       <button class="delete-btn" @click="deleteJob">Delete</button>
     </div>
   </div>
@@ -57,7 +57,9 @@ const job = ref({
     contactPhone: ''
   }
 })
-
+const editJob = () => {
+  router.push(`/edit-job/${jobId}`)
+}
 onMounted(async () => {
   try {
     const response = await axios.get(`/api/jobs/${jobId}`)

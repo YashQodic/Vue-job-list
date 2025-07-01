@@ -1,7 +1,7 @@
 <template>
     <IonSearchbar v-model="searchInput" placeholder="Search by title"></IonSearchbar>
     <div class="home-card-container">
-        <div v-if="searchResult.length >= 0" >
+        <div v-if="searchResult.length >= 0" class="home-sub-card-container">
           <Card v-for="(item, index) in searchResult" :key="index" :item="item"
               :index="index" />
         </div>
@@ -32,12 +32,15 @@ const searchResult = computed(()=>{
 
 <style scoped>
 .home-card-container {
-    display: flex;
+    overflow: auto;
+    height: calc(100vh - 114px);
+}
+
+.home-sub-card-container{
+   display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 10px 10px;
     gap: 1rem;
-    overflow: auto;
-    height: calc(100vh - 114px);
 }
 </style>
