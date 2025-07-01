@@ -1,34 +1,33 @@
 <template>
-  <div v-if="jobStore.apiStatus" class="home-spinner">
-    <IonSpinner name="circular"></IonSpinner>
-  </div>
-  <div v-if="!jobStore.apiStatus"> 
-    <div  class="home-container">
+  <Loader v-if="jobStore.apiStatus" />
+  <div v-if="!jobStore.apiStatus">
+    <div class="home-container">
       <div class="home-card-container">
-        <Card  v-if="searchResult.length >= 0" v-for="(item, index) in (searchResult.reverse().slice(0,4))" :key="index" :item="item" :index="index"/>
-        <NoJobs v-if="searchResult.length == 0"/>
+        <Card v-if="searchResult.length >= 0" v-for="(item, index) in (searchResult.reverse().slice(0, 4))" :key="index"
+          :item="item" :index="index" />
+        <NoJobs v-if="searchResult.length == 0" />
       </div>
     </div>
-    <div  class="home-button-container">
+    <div class="home-button-container">
       <IonButton expand="block" color="dark" class="all-job-see-btn" router-link="/job-list">See All jobs</IonButton>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { IonButton, IonItem, IonLabel, IonSpinner, IonIcon, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonSearchbar } from '@ionic/vue';
-import { ref, onMounted , computed } from 'vue';
-import { locationSharp } from 'ionicons/icons';
+import { IonButton } from '@ionic/vue';
+import { ref, computed } from 'vue';
 import Card from '@/components/Card.vue';
-import axios from 'axios';
 import { useJobs } from '@/store/jobList.js';
 import NoJobs from '@/components/NoJobs.vue';
+import Loader from '@/components/Loader.vue';
+
 let searchInput = ref('');
 let jobStore = useJobs();
 let jobList = jobStore.getJobList();
 
-const searchResult = computed(()=>{
-  return jobList?.value?.filter((item)=>{
+const searchResult = computed(() => {
+  return jobList?.value?.filter((item) => {
     return item.title.toLowerCase().includes(searchInput.value.toLowerCase())
   }) || [];
 })
@@ -36,13 +35,6 @@ const searchResult = computed(()=>{
 </script>
 
 <style scoped>
-.home-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .home-container {
   overflow: auto;
   height: calc(100vh - 126px);

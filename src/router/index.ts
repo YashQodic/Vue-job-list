@@ -3,6 +3,8 @@ import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue'
 import JobList from '../views/JobListPage.vue'
 import CreateJob from '../views/CreateJobPage.vue'
+import JobView from '../views/JobView.vue'
+
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -20,7 +22,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/create-job',
     name: 'Create job',
     component: CreateJob
-  }
+  },
+  {
+    path: '/job/:id',
+    name: 'Job details',
+    component: JobView
+  },
 ]
 
 const router = createRouter({

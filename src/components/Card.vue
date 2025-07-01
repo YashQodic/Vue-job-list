@@ -8,15 +8,16 @@
             </p>
             <p class="cookieDescription">{{ props.item.salary }}</p>
         </div>
-        <button class="acceptButton">Read More</button>
+        <RouterLink class="acceptButton" :to="`/job/${props.item.id}`">Read More</RouterLink>
     </div>
 </template>
 
 <script setup>
 import { IonIcon } from  '@ionic/vue';
 import { locationSharp } from 'ionicons/icons';
-import { ref, onMounted , computed } from 'vue';
 import {defineProps} from 'vue'
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
     item: Object,
     index: Number
@@ -84,6 +85,7 @@ const props = defineProps({
   font-weight: 600;
   z-index: 2;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .acceptButton:hover {

@@ -29,20 +29,6 @@
       }
     },
     {
-      "id": "3",
-      "title": "Vue.js Developer",
-      "type": "Full-Time",
-      "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-      "location": "Brooklyn, NY",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-        "contactEmail": "contact@dolorsitamet.com",
-        "contactPhone": "555-555-5555"
-      }
-    },
-    {
       "id": "4",
       "title": "Vue Front-End Developer",
       "type": "Part-Time",
@@ -96,104 +82,6 @@
         "description": "Aut minima sit plac",
         "contactEmail": "suzy@mailinator.com",
         "contactPhone": "+1 (698) 371-4126"
-      }
-    },
-    {
-      "id": "df57",
-      "title": "Magni qui excepteur ",
-      "type": "Part-Time",
-      "location": "Voluptas ut quia adi",
-      "description": "Esse voluptas elit ",
-      "salary": "Over $200K",
-      "company": {
-        "name": "Ea totam reiciendis ",
-        "description": "Corrupti fugiat qu",
-        "contactEmail": "rerasol@mailinator.com",
-        "contactPhone": "+1 (774) 104-3842"
-      }
-    },
-    {
-      "id": "cfce",
-      "title": "Magni eiusmod aspern",
-      "type": "Internship",
-      "location": "Earum ut debitis con",
-      "description": "Enim aut voluptas qu",
-      "salary": "$175K - $200K",
-      "company": {
-        "name": "Sit aliquid volupta",
-        "description": "Quos aut est amet p",
-        "contactEmail": "ladic@mailinator.com",
-        "contactPhone": "+1 (536) 302-5058"
-      }
-    },
-    {
-      "id": "5431",
-      "title": "Labore nobis veniam",
-      "type": "Internship",
-      "location": "Minus commodi unde v",
-      "description": "Sit Nam ipsum nihil",
-      "salary": "$125K - $150K",
-      "company": {
-        "name": "Ipsum quidem illo no",
-        "description": "Qui do qui occaecat ",
-        "contactEmail": "mowavine@mailinator.com",
-        "contactPhone": "+1 (425) 493-4856"
-      }
-    },
-    {
-      "id": "4c68",
-      "title": "Velit est vel do un",
-      "type": "Remote",
-      "location": "Provident velit ea",
-      "description": "Consequatur impedit",
-      "salary": "Over $200K",
-      "company": {
-        "name": "Rerum excepturi quas",
-        "description": "Fuga Id minima repr",
-        "contactEmail": "qykuj@mailinator.com",
-        "contactPhone": "+1 (347) 941-1758"
-      }
-    },
-    {
-      "id": "3798",
-      "title": "Quia lorem dolor dol",
-      "type": "Internship",
-      "location": "Aut proident distin",
-      "description": "Dolores libero amet",
-      "salary": "$150K - $175K",
-      "company": {
-        "name": "Assumenda dolore sin",
-        "description": "Tempore aliquip qui",
-        "contactEmail": "gazyrolywe@mailinator.com",
-        "contactPhone": "+1 (335) 327-1233"
-      }
-    },
-    {
-      "id": "0f23",
-      "title": "Dolorem commodi offi",
-      "type": "Remote",
-      "location": "Adipisicing non in c",
-      "description": "Dolorum illo minus e",
-      "salary": "$100K - $125K",
-      "company": {
-        "name": "Dolores velit labor",
-        "description": "Laudantium sit cons",
-        "contactEmail": "remujulun@mailinator.com",
-        "contactPhone": "+1 (381) 377-7333"
-      }
-    },
-    {
-      "id": "bb5b",
-      "title": "Hic numquam quod ad ",
-      "type": "Part-Time",
-      "location": "Enim excepteur quide",
-      "description": "Elit esse corporis ",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Velit facere volupt",
-        "description": "Pariatur Accusamus ",
-        "contactEmail": "wunujer@mailinator.com",
-        "contactPhone": "+1 (657) 452-7191"
       }
     }
   ]
