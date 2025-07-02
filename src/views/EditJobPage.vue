@@ -146,10 +146,10 @@ async function handleSubmit() {
     };
     try {
         await axios.put(`/api/jobs/${jobId}`, newJob);
-          jobStore.getAllJobList().then(() => {
+         jobStore.getAllJobList().then(() => {
          toast.success("Job Was Updated!");
           setTimeout(() => {
-              router.push('/job-list')
+              router.push(`/job/${jobId}`);
           },500)
       })
     } catch (error) {
