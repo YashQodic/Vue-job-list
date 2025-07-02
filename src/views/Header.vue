@@ -1,7 +1,7 @@
 <template>
     <ion-header class="header-container">
         <ion-toolbar class="header-toolbar-container">
-            <IonImg :src="logo" class="header-logo"></IonImg>
+            <IonImg :src="logo" class="header-logo" @click="openMenu"></IonImg>
         </ion-toolbar>
         <div class="header-list-container">
             <RouterLink to="/" class="home-link-container text-style">
@@ -21,9 +21,13 @@
 import { IonImg }  from '@ionic/vue';
 import logo from '../assets/logo.svg'
 import { useRouter , RouterLink } from 'vue-router';
+import { menuController } from '@ionic/vue';
 
 const route = useRouter()
 console.log(route.currentRoute.value.name);
+const openMenu = async () => {
+  await menuController.open(); // opens default menu
+}
 
 </script>
 
@@ -31,6 +35,7 @@ console.log(route.currentRoute.value.name);
 .header-logo{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .header-container{

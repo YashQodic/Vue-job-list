@@ -29,7 +29,7 @@ const jobStore = useJobs();
 const searchInput = ref('');
 const jobList = jobStore.getJobList();
 let currentPage = ref(1);
-let perPage = ref(4);
+let perPage = ref(8);
 
 const searchResult = computed(()=>{
   return jobList?.value?.filter((item)=>{
@@ -61,12 +61,14 @@ const handlePageClick = (page) => {
   flex-wrap: wrap;
   list-style: none;
 }
+
 ::v-deep .pagination .page-item.active a{
-  background-color: #007bff;
+  background: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
   color: white;
   font-weight: 600;
-  border-color: #007bff;
+  border: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
 }
+
 ::v-deep .pagination .page-item .page-link {
   display: block;
   padding: 8px 14px;
@@ -75,21 +77,21 @@ const handlePageClick = (page) => {
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  background-color: white;
+  background: white;
   transition: all 0.2s ease-in-out;
 }
 
 ::v-deep .pagination .page-item .page-link:hover {
-  background-color: #007bff;
+  background: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
   color: white;
-  border-color: #007bff;
+  border: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
 }
 
 ::v-deep .pagination .page-item.selected .page-link {
-  background-color: #007bff;
+  background: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
   color: white;
   font-weight: 600;
-  border-color: #007bff;
+  border: linear-gradient(to right, rgb(0 0 0), rgb(73 73 73));
 }
 
 .home-card-container {
