@@ -27,11 +27,6 @@
 
         </ion-content>
       </ion-menu>
-
-      <!-- Main Content -->
-      <div class="ion-page" id="main-content">
-        <ion-router-outlet></ion-router-outlet>
-      </div>
     </ion-app>
   </template>
 
