@@ -71,20 +71,6 @@
       }
     },
     {
-      "id": "af7b",
-      "title": "Nobis ipsum optio i",
-      "type": "Part-Time",
-      "location": "Aliquid iure dolores",
-      "description": "Et dolor consequatur",
-      "salary": "$100K - $125K",
-      "company": {
-        "name": "Nulla rerum mollitia",
-        "description": "Officia quaerat elig",
-        "contactEmail": "zige@mailinator.com",
-        "contactPhone": "+1 (789) 779-5434"
-      }
-    },
-    {
       "id": "a106",
       "title": "Tempore id aut in a",
       "type": "Full-Time",
@@ -127,32 +113,18 @@
       }
     },
     {
-      "id": "dd4d",
-      "title": "Assumenda ut consequ",
-      "type": "Part-Time",
-      "location": "Maxime reprehenderit",
-      "description": "Id quia laudantium ",
-      "salary": "$50K - $60K",
+      "id": "b361",
+      "title": "Dolore consequatur ",
+      "type": "Full-Time",
+      "location": "Unde nobis ullam qua",
+      "description": "Irure dignissimos qu",
+      "salary": "$80K - $90K",
       "company": {
-        "name": "Alias nesciunt dolo",
-        "description": "Sit atque earum sap",
-        "contactEmail": "pazuzeni@mailinator.com",
-        "contactPhone": "+1 (241) 987-3651"
+        "name": "Irure voluptatum vol",
+        "description": "Atque quibusdam et d",
+        "contactEmail": "sycybadas@mailinator.com",
+        "contactPhone": "+1 (207) 925-2719"
       }
-    },
-    {
-      "title": "Eligendi voluptatem ",
-      "type": "Remote",
-      "location": "Ipsum repellendus ",
-      "description": "Error quisquam elige",
-      "salary": "$175K - $200K",
-      "company": {
-        "name": "Nulla ratione ab lab",
-        "description": "Ipsa excepteur sit",
-        "contactEmail": "wimokag@mailinator.com",
-        "contactPhone": "+1 (662) 995-2905"
-      },
-      "id": "7eba"
     }
   ]
 }
